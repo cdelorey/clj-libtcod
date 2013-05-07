@@ -249,7 +249,7 @@
 ; Library definition -----------------------------------------------------------------
 (defclib
   libtcod 
-  (:libname "tcod_debug")
+  (:libname "tcod")
   (:structs
    (key-t :vk int :c char :lalt bool :lctrl bool :ralt bool :rctrl bool :shift bool)
    (mouse-t :x int :y int :dx int :dy int :cx int :cy int :dcx int :dcy int 
@@ -334,8 +334,8 @@
 (defn -main
   []
   (loadlib libtcod)
-  (console-set-custom-font "terminal.png" font-layout-ascii-in-col 16 16)
-  (console-init-root 80 60 "Test" false tcod-renderer-sdl)
+  (console-set-custom-font "terminal16x16_gs_ro.png" font-layout-ascii-in-row 16 16)
+  (console-init-root 80 25 "Test" false tcod-renderer-sdl)
   (console-set-default-background root (color-rgb 100 30 35))
   (console-set-default-foreground root (color-rgb 0 0 0))
   (console-clear root)
@@ -359,10 +359,10 @@
   (console-wait-for-keypress true)
   (console-set-default-background root (color-rgb 255 10 170))
   (console-rect root 10 10 10 10 true tcod-bkgnd-set)
-  (console-hline root 5 5 30 tcod-bkgnd-none)
-  (console-vline root 5 5 30 tcod-bkgnd-set)
-  (console-print-frame root 5 5 20 30 true tcod-bkgnd-none nil)
-  (console-print-rect root 5 5 20 30 "fjjasdkljaskldjaklsjdklasjdklasjdlkasjdlkjasd")
+  (console-hline root 5 5 10 tcod-bkgnd-none)
+  (console-vline root 5 5 10 tcod-bkgnd-set)
+  (console-print-frame root 5 5 10 10 true tcod-bkgnd-none nil)
+  (console-print-rect root 5 5 10 10 "fjjasdkljaskldjaklsjdklasjdklasjdlkasjdlkjasd")
   (console-flush)
   (console-wait-for-keypress true))
   ;(console-set-fullscreen true)
