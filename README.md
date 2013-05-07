@@ -15,8 +15,12 @@ Clojure bindings to the [libtcod] library
 Installation
 -----------
 
-Make sure libtcod and SDL are properly installed on your system.
-	
+Make sure libtcod and SDL are properly installed on your system.  
+Add the following to your `project.clj`'s dependencies:
+
+	[clj-libtcod "0.1.0-SNAPSHOT"]
+
+
 
 License
 --------

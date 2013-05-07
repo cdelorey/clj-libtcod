@@ -1,4 +1,4 @@
-(defproject clj-libtcod "0.1.0"
+(defproject clj-libtcod "0.1.0-SNAPSHOT"
   :description "Clojure bindings to the libtcod roguelike library."
   :url "https://github.com/cdelorey/clj-libtcod"
   :license {:name "Eclipse Public License"
