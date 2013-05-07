@@ -1,13 +1,15 @@
 # clj-libtcod
 
-A Clojure library designed to ... well, that part is up to you.
+Clojure bindings to the libtcod library:  
+http://doryen.eptalys.net/libtcod/
+
+clj-libtcod uses clj-native to generate JNA direct mappings:  
+https://github.com/bagucode/clj-native
+
+clj-libtcod currently only provides wrapper functions for libtcod's console module.
 
 ## Usage
 
-FIXME
 
-## License
-
-Copyright © 2013 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+## License  
+Distributed under the Eclipse Public License.
