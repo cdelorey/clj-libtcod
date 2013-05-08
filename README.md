@@ -1,7 +1,7 @@
 clj-libtcod
 =======
-Clojure bindings to the [libtcod] library.
-`clj-libtcod` uses [clj-native] to generate JNA direct mappings.
+Clojure bindings to the [libtcod] library.  
+`clj-libtcod` uses [clj-native] to generate JNA direct mappings.  
 `clj-libtcod` currently only provides wrapper functions for libtcod's console module.
 
 [libtcod]: http://doryen.eptalys.net/libtcod/
@@ -10,7 +10,7 @@ Clojure bindings to the [libtcod] library.
 
 Installation
 -----------
-Make sure libtcod and SDL are properly installed on your system.
+Make sure libtcod and SDL are properly installed on your system.  
 Add the following to your `project.clj`'s dependencies:
 
     [clj-libtcod "0.1.0-SNAPSHOT"]
