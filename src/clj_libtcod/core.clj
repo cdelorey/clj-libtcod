@@ -333,43 +333,5 @@
   []
   (loadlib libtcod))
 
-; test
-;(defn -main
-;  []
-;  (loadlib libtcod)
-;  (console-set-custom-font "terminal16x16_gs_ro.png" font-layout-ascii-in-row 16 16)
-;  (console-init-root 80 25 "Test" false tcod-renderer-sdl)
-;  (console-set-default-background root (color-rgb 100 30 35))
-;  (console-set-default-foreground root (color-rgb 0 0 0))
-;  (console-clear root)
-;  (console-set-char-background root 10 10 (color-rgb 10 45 11) tcod-bkgnd-set)
-;  (console-set-char-foreground root 10 10 (color-rgb 0 0 0))
-;  (console-set-char root 10 10 char-block3)
-;  (console-set-char root 10 11 char-block3)
-;  (console-set-char root 11 10 char-block3)
-;  (console-put-char root 15 15 char-smilie tcod-bkgnd-set)
-;  (console-put-char-ex root 15 20 char-dhline
-;                       (color-rgb 1 45 100) (color-rgb 100 100 100))
-;  (console-print root 1 1 "Hello, World!")
-;  (mouse-move 50 50)
-;  (console-flush)
-;  (println (console-is-fullscreen?))
-;  (println (console-is-window-closed?))
-;  (println (console-has-mouse-focus?))
-;  (println (console-is-active?))
-;  (println (console-get-char root 10 10))
-;  (println (console-get-default-background root))
-;  (console-wait-for-keypress true)
-;  (console-set-default-background root (color-rgb 255 10 170))
-;  (console-rect root 10 10 10 10 true tcod-bkgnd-set)
-;  (console-hline root 5 5 10 tcod-bkgnd-none)
-;  (console-vline root 5 5 10 tcod-bkgnd-set)
-;  (console-print-frame root 5 5 10 10 true tcod-bkgnd-none nil)
-;  (console-print-rect root 5 5 10 10 "fjjasdkljaskldjaklsjdklasjdklasjdlkasjdlkjasd")
-;  (console-flush)
-;  (console-wait-for-keypress true))
-  ;(console-set-fullscreen true)
-
-
 
 
